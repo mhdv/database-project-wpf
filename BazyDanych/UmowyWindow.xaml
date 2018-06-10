@@ -1,0 +1,32 @@
+﻿<Window x:Class="BazyDanych.UmowyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BazyDanych"
+        mc:Ignorable="d"
+        Title="UmowyWindow" Height="450" Width="800">
+	<Grid>
+		<Button x:Name="BackBtn" Content="Wstecz" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Margin="709,0,9.6,10" Click="BackBtn_Click"/>
+		<ListBox x:Name="KlientList" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="378" Margin="10,27,0,0"/>
+		<ListBox x:Name="PracownikList" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="391" Margin="393,27,0,0"/>
+		<ListBox x:Name="UmowaList" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="378" Margin="10,248,0,0"/>
+		<Label Content="KLIENT" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="153,3,573.6,0" Width="67"/>
+		<Label Content="PRACOWNIK" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="547,3,146.6,0" Width="100"/>
+		<Label Content="UMOWY" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="153,224,573.6,0" Width="67"/>
+		<ComboBox x:Name="Nieruchomosci" HorizontalAlignment="Left" Margin="180,150,0,0" VerticalAlignment="Top" Width="208"/>
+		<Label Content="DOTYCZY NIERUCHOMOŚCI:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="19,150,584.6,0" Width="190"/>
+		<ComboBox x:Name="TypUmowy" HorizontalAlignment="Left" Margin="180,178,0,0" VerticalAlignment="Top" Width="208"/>
+		<Label Content="TYP UMOWY:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="94,178,621.6,0" Width="78"/>
+		<TextBox x:Name="WysokoscProwizji" HorizontalAlignment="Left" Height="23" Margin="634,150,0,0" TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="150"/>
+		<Label Content="WYSOKOŚĆ PROWIZJI:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="507,150,159.6,0" Width="127"/>
+		<TextBox x:Name="Miejsce" HorizontalAlignment="Left" Height="23" Margin="633,206,0,0" TextWrapping="Wrap" Text="Wrocław" VerticalAlignment="Top" Width="150"/>
+		<Label Content="TERMIN:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="581,177,159.6,0" Width="53"/>
+		<Label Content="MIEJSCE:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed" Margin="578,204,159.6,0" Width="56"/>
+		<Button x:Name="DodajBtn" Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="373" Margin="410,265,0,0" Height="29" FontFamily="Tw Cen MT" FontSize="24" Click="DodajBtn_Click"/>
+		<DatePicker x:Name="Data" HorizontalAlignment="Left" Margin="634,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.878,0.396" Width="149"/>
+		<Button x:Name="UsunBtn" Content="USUŃ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="410,299,0,0" Height="29" FontFamily="Tw Cen MT" FontSize="24" Click="UsunBtn_Click"/>
+		<Button x:Name="EdytujBtn" Content="EDYTUJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" Margin="601,299,0,0" Height="29" FontFamily="Tw Cen MT" FontSize="24" Click="EdytujBtn_Click"/>
+
+	</Grid>
+</Window>

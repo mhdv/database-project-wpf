@@ -1,0 +1,18 @@
+namespace BazyDanych.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class third : DbMigration
+    {
+        public override void Up()
+        {
+            RenameTable(name: "dbo.Osobas", newName: "Osoba");
+        }
+        
+        public override void Down()
+        {
+            RenameTable(name: "dbo.Osoba", newName: "Osobas");
+        }
+    }
+}
